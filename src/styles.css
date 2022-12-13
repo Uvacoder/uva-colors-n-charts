@@ -1,0 +1,98 @@
+html {
+  background-color: black;
+  color: #eee;
+}
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-weight: 300;
+  max-width: 512px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.swatch-set {
+  display: flex;
+}
+
+.separator {
+  margin: 1rem;
+  align-self: center;
+}
+
+.swatch {
+  width: 128px;
+  height: 128px;
+  display: flex;
+  padding: 8px;
+}
+
+.swatch-color {
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 12px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.horizonal-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 128px);
+  width: 512px;
+  margin: 0 auto;
+}
+
+.transparent-background {
+  background-image: linear-gradient(45deg, #222 25%, transparent 25%),
+    linear-gradient(-45deg, #222 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #222 75%),
+    linear-gradient(-45deg, transparent 75%, #222 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.color-picker-label {
+  margin: 1rem;
+}
+
+.color-input {
+  margin: 1rem;
+}
+
+.table td,
+.table th {
+  padding: 0.5rem 1rem;
+}
+
+.contrast-block {
+  height: 32px;
+  width: 32px;
+}
+
+.contrast-wrapper {
+  display: flex;
+  border: 1px solid white;
+}

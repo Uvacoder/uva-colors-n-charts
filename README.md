@@ -1,2 +1,2 @@
-# uva-colors-n-charts
+# color2k
 Created with CodeSandbox
